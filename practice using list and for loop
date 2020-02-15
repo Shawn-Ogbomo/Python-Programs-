@@ -1,0 +1,68 @@
+#create list.
+cars = ['honda','subaru','nissan','mazda']
+#show list contents. 
+print(cars)
+#show number of cars in the list.
+len(cars)
+print("There are:", len(cars),"cars in this list.")
+#Add 'hyundai' to list. 
+cars.append('hyundai')
+#print list to see changes. 
+print(cars)
+#Add an entry to the begginning and middle of the list. 
+cars.insert(0,'acura')
+cars.insert(3,'dodge')
+#print list to see changes.
+print(cars)
+# organize list 
+#in alphabetical order without changing original order of the list.
+print(sorted(cars))
+#pass an argument inorder to arrange list in alphabetical order without
+#changing the order of the original list. 
+print(sorted(cars,reverse=True))
+#print original list to see if there are no permanent changes. 
+print(cars)
+#remove item from list by entry name.
+cars.remove('dodge')
+#print list to view changes. 
+print(cars)
+#delete the last entry permanently from the list. 
+del cars[-1]
+print(cars)
+#print the last entry in the list. 
+print(cars[-1])
+#add an entry named mercedez-benz to the list.
+cars.insert(0,'mercedez-benz')
+#print changes. 
+print(cars)
+#pop the value mercedez-benz and store it in the variable 'too_expensive'
+too_expensive = cars.pop(0)
+#print changes.
+print(cars)
+#checking to see if the mercedez-benz is in the too_expensive variable.
+print(too_expensive)
+#use the too_expensive variable to create a print statement.
+print("A",too_expensive,"is too pricey.")
+#return the poped value back into the list. 
+too_expensive = cars.insert(0,'mercedez-benz')
+#print changes.
+print(cars)
+#verify that there is nothing in the too_expensive variable.
+print(too_expensive)
+#see length of list. 
+print(len(cars))
+#arrange the list in reverse permanently. 
+cars.reverse()
+#print changes. 
+print(cars)
+#reverse the list again so it's in original order. 
+cars.reverse()
+#print changes. 
+print(cars)
+#modify the list. replace mercedez benz with lexus.
+cars[0] = ('lexus')
+#see changes.
+print(cars)
+#use for loop to print out all the items in the list.
+for car in cars:
+	print(car)
